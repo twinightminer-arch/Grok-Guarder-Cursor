@@ -1,0 +1,11 @@
+{
+  "open": "Grok を開く",
+  "panel": "Guarder パネルを開く",
+  "external": "ブラウザーで Grok を開く",
+  "translate": "選択範囲を Grok で翻訳",
+  "save": "選択範囲を単語帳に保存",
+  "copy": "単語をコピー",
+  "archive": "単語をアーカイブまたは復元",
+  "note": "単語のメモを編集",
+  "languageHelp": "Guarder パネルの言語。空欄の場合は以前の設定または Cursor の表示言語を使用します。"
+}

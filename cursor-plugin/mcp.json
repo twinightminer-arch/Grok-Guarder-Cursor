@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "groks-guarder": {
+      "command": "node",
+      "args": ["${CURSOR_PLUGIN_ROOT}/panel.mjs"]
+    }
+  }
+}

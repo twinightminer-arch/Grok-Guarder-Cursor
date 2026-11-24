@@ -1,0 +1,125 @@
+{
+  "name": "groks-guarder",
+  "displayName": "Grok Guarder",
+  "publisher": "guarder-local",
+  "version": "0.1.0",
+  "description": "Grok Guarder for the Cursor Agents Window and classic editor on Windows.",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "main": "./extension.js",
+  "categories": [
+    "Other"
+  ],
+  "icon": "media/grok.png",
+  "extensionKind": [
+    "ui"
+  ],
+  "scripts": {
+    "test": "node --test test/unit.cjs",
+    "package": "vsce package --allow-missing-repository"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "groksGuarder.open",
+        "title": "%open%",
+        "category": "Grok Guarder",
+        "icon": "$(globe)"
+      },
+      {
+        "command": "groksGuarder.panel",
+        "title": "%panel%",
+        "category": "Grok Guarder"
+      },
+      {
+        "command": "groksGuarder.external",
+        "title": "%external%",
+        "category": "Grok Guarder",
+        "icon": "$(link-external)"
+      },
+      {
+        "command": "groksGuarder.translate",
+        "title": "%translate%",
+        "category": "Grok Guarder"
+      },
+      {
+        "command": "groksGuarder.save",
+        "title": "%save%",
+        "category": "Grok Guarder"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "groksGuarder.open",
+        "key": "alt+shift+g"
+      },
+      {
+        "command": "groksGuarder.save",
+        "key": "alt+shift+v",
+        "when": "editorTextFocus && editorHasSelection"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "groksGuarder.translate",
+          "when": "editorHasSelection",
+          "group": "groksGuarder"
+        },
+        {
+          "command": "groksGuarder.save",
+          "when": "editorHasSelection",
+          "group": "groksGuarder"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Grok Guarder",
+      "properties": {
+        "groksGuarder.translationLanguage": {
+          "type": "string",
+          "enum": [
+            "Simplified Chinese",
+            "Traditional Chinese",
+            "English",
+            "Japanese",
+            "Korean"
+          ],
+          "default": "Simplified Chinese",
+          "description": "Target language for copied translation prompts."
+        },
+        "groksGuarder.language": {
+          "type": "string",
+          "enum": [
+            "",
+            "zh-CN",
+            "zh-TW",
+            "en",
+            "ja",
+            "ko"
+          ],
+          "default": "",
+          "scope": "application",
+          "description": "%languageHelp%"
+        },
+        "groksGuarder.legacyDataRoot": {
+          "type": "string",
+          "default": "",
+          "scope": "machine",
+          "description": "Folder containing the existing Guarder wallpaper library."
+        },
+        "groksGuarder.vocabularyRoot": {
+          "type": "string",
+          "default": "",
+          "scope": "machine",
+          "description": "Shared local vocabulary directory. By default, Documents/GPT Salad Vocabulary."
+        }
+      }
+    }
+  },
+  "license": "AGPL-3.0-or-later",
+  "activationEvents": [
+    "onStartupFinished"
+  ]
+}

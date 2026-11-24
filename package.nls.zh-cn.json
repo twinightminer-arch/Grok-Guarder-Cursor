@@ -1,0 +1,11 @@
+{
+  "open": "打开 Grok",
+  "panel": "打开 Guarder 面板",
+  "external": "在浏览器中打开 Grok",
+  "translate": "使用 Grok 翻译选中文本",
+  "save": "保存选中文本到生词本",
+  "copy": "复制词条",
+  "archive": "归档或恢复词条",
+  "note": "编辑词条笔记",
+  "languageHelp": "Guarder 面板语言。空值时沿用旧设置或 Cursor 显示语言。"
+}

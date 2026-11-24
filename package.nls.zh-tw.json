@@ -1,0 +1,11 @@
+{
+  "open": "開啟 Grok",
+  "panel": "開啟 Guarder 面板",
+  "external": "在瀏覽器開啟 Grok",
+  "translate": "使用 Grok 翻譯選取的文字",
+  "save": "選取的文字儲存到生字本",
+  "copy": "複製詞條",
+  "archive": "封存或復原詞條",
+  "note": "編輯詞條筆記",
+  "languageHelp": "Guarder 面板語言。留空沿用舊設定或 Cursor 顯示語言。"
+}

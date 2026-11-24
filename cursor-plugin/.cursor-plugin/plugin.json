@@ -1,0 +1,7 @@
+{
+  "name": "groks-guarder",
+  "displayName": "Grok Guarder",
+  "version": "0.1.0",
+  "description": "Open the official Grok website and prepare translation prompts from the Cursor Agents Window.",
+  "logo": "./media/grok.svg"
+}

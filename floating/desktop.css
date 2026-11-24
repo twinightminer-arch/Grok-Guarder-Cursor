@@ -1,0 +1,20 @@
+.launcher { display: none; }
+.panel { inset:0; width:100vw; height:100vh; box-shadow:none; }
+.selection-notice { right:16px; bottom:18px; }
+.grok-slot { display:flex; flex-direction:column; align-items:stretch; }
+.grok-slot .grok-native { flex:1; height:0; }
+.grok-slot[data-unavailable] { justify-content:center; }
+.grok-fallback {
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:7px 10px;
+  background:#eff3f8;
+  border-top:1px solid #d7dde6;
+}
+.grok-fallback p { flex:1 1 155px; margin:0; color:#334155; font-size:12px; text-align:start; }
+.grok-fallback button { flex:none; }
+.theme-preview .wallpaper-preview {
+  filter: blur(var(--guarder-preview-blur,0px));
+  transform: scale(var(--guarder-preview-scale,1));
+}

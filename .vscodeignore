@@ -1,0 +1,7 @@
+test/**
+cursor-plugin/**
+native/*.cs
+native/*.ps1
+native/*.manifest
+*.vsix
+.gitignore

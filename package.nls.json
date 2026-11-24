@@ -1,0 +1,11 @@
+{
+  "open": "Open Grok",
+  "panel": "Open Guarder Panel",
+  "external": "Open Grok in Browser",
+  "translate": "Translate Selection with Grok",
+  "save": "Save Selection to Vocabulary",
+  "copy": "Copy Vocabulary Entry",
+  "archive": "Archive or Restore Vocabulary Entry",
+  "note": "Edit Vocabulary Note",
+  "languageHelp": "Guarder panel language. Leave blank to use the old preference or Cursor display language."
+}
